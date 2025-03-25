@@ -9,17 +9,35 @@ This is a ready-to-use React.js template powered by Vite, TypeScript, ESLint, an
 - **Prettier** for automatic code formatting
 - **Sitemap Generation** with `vite-plugin-sitemap`
 - **React Hooks & React Refresh** ESLint plugins
+- **Predefined Folder Structure** for better project organization
 
 ## Installation
 Clone the repository and install dependencies:
 ```sh
-git clone <https://github.com/ArnoSahakyan/react-template.git> my-project  
+git clone https://github.com/ArnoSahakyan/react-template my-project  
 cd my-project  
 yarn install  
 ```
 Or with npm:
 ```sh
 npm install
+```
+
+## Folder Structure
+The `src` directory follows a structured layout for easy navigation:
+
+```
+src  
+│── assets        # Static assets (images, fonts, etc.)  
+│── components    # Reusable UI components  
+│── context       # React Context API for state management  
+│── hooks         # Custom React hooks  
+│── middlewares   # Middleware logic  
+│── pages         # Page components for routing  
+│── providers     # Context providers  
+│── router        # Application routing configuration  
+│── shared        # Shared utilities and helper functions  
+│── store         # Global state management (e.g., Redux/Zustand)  
 ```
 
 ## Scripts
@@ -30,20 +48,14 @@ npm install
 - `yarn format` – Format code using Prettier
 - `yarn fix` – Run both linting and formatting
 
-## Configuration
-This template includes:
-- `vite.config.ts` with React and sitemap plugins
-- `.prettierrc.json` for code formatting rules
-- `eslint.config.js` with recommended rules and plugins
-- `tsconfig.json` for TypeScript configuration
-
-You can modify these files as needed.
-
 ## Getting Started
 1. Clone the repo
 2. Install dependencies with `yarn install` or `npm install`
 3. Start the dev server using `yarn dev`
 4. Build your React project!
+
+## Repository
+[GitHub: ArnoSahakyan/react-template](https://github.com/ArnoSahakyan/react-template)
 
 ## License
 This template is open-source and free to use.
