@@ -1,54 +1,51 @@
-# React + TypeScript + Vite
+# React.js Template with ESLint & Prettier
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a ready-to-use React.js template powered by Vite, TypeScript, ESLint, and Prettier. It helps developers quickly start projects with best practices in place.
 
-Currently, two official plugins are available:
+## Features
+- **Vite** for fast development and builds
+- **TypeScript** for type safety
+- **ESLint** with recommended rules and Prettier integration
+- **Prettier** for automatic code formatting
+- **Sitemap Generation** with `vite-plugin-sitemap`
+- **React Hooks & React Refresh** ESLint plugins
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## Installation
+Clone the repository and install dependencies:
+```sh
+git clone <https://github.com/ArnoSahakyan/react-template.git> my-project  
+cd my-project  
+yarn install  
+```
+Or with npm:
+```sh
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Scripts
+- `yarn dev` – Start the development server
+- `yarn build` – Build for production
+- `yarn preview` – Preview the production build
+- `yarn lint` – Run ESLint with auto-fix
+- `yarn format` – Format code using Prettier
+- `yarn fix` – Run both linting and formatting
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Configuration
+This template includes:
+- `vite.config.ts` with React and sitemap plugins
+- `.prettierrc.json` for code formatting rules
+- `eslint.config.js` with recommended rules and plugins
+- `tsconfig.json` for TypeScript configuration
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+You can modify these files as needed.
+
+## Getting Started
+1. Clone the repo
+2. Install dependencies with `yarn install` or `npm install`
+3. Start the dev server using `yarn dev`
+4. Build your React project!
+
+## License
+This template is open-source and free to use.
+
+---
