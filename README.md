@@ -40,6 +40,21 @@ src
 │── store         # Global state management (e.g., Redux/Zustand)  
 ```
 
+## Cleaning Up Example Files
+After cloning the repository, you can remove the placeholder files by running the following command in your terminal:
+
+### For Unix-based systems (macOS/Linux):
+```sh
+find src/ -type f -name ".gitkeep" -delete
+```
+
+### For Windows (Command Prompt):
+```sh
+del /S src\.gitkeep
+```
+
+This will remove all the example files and placeholder files from the project, leaving only the folder structure in place.
+
 ## Scripts
 - `yarn dev` – Start the development server
 - `yarn build` – Build for production
